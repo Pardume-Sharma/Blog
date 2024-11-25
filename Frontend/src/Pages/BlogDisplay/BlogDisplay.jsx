@@ -62,7 +62,7 @@ const BlogDisplay = () => {
                             <div className="blog-item" key={item._id || index} id={item._id}>
                                 {/* Fetching image from Unsplash */}
                                 <img
-                                    src={item.image || await fetchImage(item.keyword)} // Image fallback to Unsplash
+                                    src={item.image || fetchImage(item.keyword)} // Image fallback to Unsplash
                                     alt={item.name}
                                     className="blog-image"
                                 />
