@@ -1,0 +1,26 @@
+.verify{
+    min-height: 60vh;
+    display: grid;
+}
+.spinner{
+    width: 100px;
+    aspect-ratio: 1;
+    place-self: center;
+    border: 5px solid var(--grey-color);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    animation: rotate 1s infinite;
+    -webkit-animation: rotate 1s infinite;
+}
+@keyframes rotate{
+    100%{
+        transform: rotatre(360deg);
+        -webkit-transform: rotatre(360deg);
+        -moz-transform: rotatre(360deg);
+        -ms-transform: rotatre(360deg);
+        -o-transform: rotatre(360deg);
+}
+}

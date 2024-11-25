@@ -1,0 +1,105 @@
+.login-popup {
+    color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 50;
+    height: 100vh;
+    width: 100%;
+    background: rgba(53, 53, 53, 0.64);
+    animation: fadeIn .5s;
+    -webkit-animation: fadeIn .5s;
+}
+
+.login-span {
+    cursor: pointer;
+    color: var(--greeting-color);
+}
+
+.login-cross-icon {
+    height: 1.4rem;
+    background: rgba(128, 128, 128, 0.82);
+    position: relative;
+    right: -4.9rem;
+    width: 1.5rem;
+    padding: .2rem;
+    cursor: pointer;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.login-form {
+    place-self: center;
+    border: 2px solid var(--black-color);
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: var(--white-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-head {
+    display: flex;
+    color: var(--black-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-details {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.login-details input {
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--black-color);
+    transition: border 0.3s;
+    -webkit-transition: border 0.3s;
+    -moz-transition: border 0.3s;
+    -ms-transition: border 0.3s;
+    -o-transition: border 0.3s;
+}
+
+.login-details input:focus {
+    border-color: var(--greeting-color);
+    outline: none;
+}
+
+.btn-class {
+    padding: .8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: var(--greeting-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-footer span {
+    color: var(--greeting-color);
+}
+
+.login-footer {
+    width: 16.9rem;
+    color: var(--black-color);
+    text-align: left;
+    gap: .5rem;
+}
+
+.login-footer input {
+    display: inline;
+    margin-right: .5rem;
+}

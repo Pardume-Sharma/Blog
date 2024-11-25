@@ -1,0 +1,78 @@
+.add {
+    width: 70%;
+    margin-left: 1.4rem;
+    margin-top: 3rem;
+    color: var(--grey-color);
+    font-size: 1rem;
+    
+    & form {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 1px solid var(--grey-color);
+        background-color: transparent;
+        color: var(--black);
+        font-size: 1rem;
+
+        & input, & textarea, & select {
+            width: 100%;
+            padding: .5rem;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid var(--grey-color);
+        }
+
+        & button {
+            width: 100%;
+            padding: .5rem 1rem;
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            width: 5rem;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+    }
+}
+
+.add-img-upload img {
+    width: 5.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-blog-title, .add-blog-description {
+    width: max(40%, 280px);
+    
+    & textarea {
+        padding: .5rem;
+        resize: vertical;
+    }
+}
+
+.add-blog-title input, .add-blog-description textarea {
+    padding: .4rem;
+}
+
+.add-category {
+    display: flex;
+    gap: 1.4rem;
+    
+    & select {
+        max-width: 120px;
+        padding: .4rem;
+    }
+}
+
+.add-btn {
+    min-width: 110px;
+    border: none;
+    background: var(--black-color);
+    color: var(--white-color);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    transition: background-color 0.2s ease;
+}

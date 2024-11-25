@@ -1,0 +1,40 @@
+.feedback{
+background: url('../../assets/feed-bg.webp');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+padding: 2rem 0rem;
+}
+form{
+    color:rgba(21, 20, 20, 0.578);
+    background: transparent;
+    background-color: rgba(128, 128, 128, 0.548);
+    border-radius: 1rem;
+    max-width: 25rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+form h3{
+    font-size: 2.2rem;
+    color:green;
+    font-weight: 900;
+    padding-bottom: .7rem;
+    font-weight: normal;
+}
+#thanks{
+    font-size: 1rem;
+    color: var(--greeting-color);
+    margin: 2% 0;
+}
+form .form-box{
+    position: relative;
+    width: 100%;
+    margin: .7rem 0;
+    padding:.5rem .5rem;
+    font-size: 1rem;
+    color:var(--black);
+    border-radius: .5rem;
+    text-transform: none;
+    border: none;
+}
