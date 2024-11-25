@@ -13,7 +13,7 @@ const StoreContextProvider = (props) => {
     const [foodList, setFoodList] = useState([]);
     const [blogList, setBlogList] = useState([]);
     const [token, setToken] = useState("");
-    const url = "http://localhost:4000";
+    const url = import.meta.DB_URL;
 
     // States related to chat functionality
     const [prevPrompts, setPrevPrompts] = useState([]);

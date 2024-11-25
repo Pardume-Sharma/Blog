@@ -8,9 +8,11 @@ import ListBlogs from "./pages/ListBlogs/ListBlogs.jsx";
 import PrivateRoute from "./PrivateRoute.jsx";
 import Error from "./pages/Error/Error.jsx";
 import AdminLogin from './pages/AdminLogin/AdminLogin.jsx'
+import { useContext } from "react";
+import { StoreContext } from "./components/context/StoreContext.jsx";
 
 const App = () => {
-  const url = "http://localhost:4000";
+  const {url} = useContext(StoreContext);
   return (
     <>
       <div>

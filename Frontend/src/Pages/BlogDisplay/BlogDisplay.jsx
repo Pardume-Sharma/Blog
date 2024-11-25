@@ -1,18 +1,17 @@
-// import { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import './BlogDisplay.css'
 import Navbar from '../../components/Navbar/Navbar';
 import { useEffect } from 'react';
 import axios from "axios"
-import { useState } from 'react';
-// import { StoreContext } from '../../components/context/StoreContext';
+import { StoreContext } from '../../components/context/StoreContext';
 
 const BlogDisplay = () => {
     const [blogList, setBlogList] = useState([]);
-
+    const {url} = useContext(StoreContext);
     useEffect(() => {
       const fetchBlogList = async () => {
         try {
-            const response = await axios.get(`http://localhost:4000/api/blog/listblogs`);
+            const response = await axios.get(`${url}/api/blog/listblogs`);
             setBlogList(response.data.data);
         } catch (error) {
             console.error("Error fetching blog list:", error);
@@ -32,7 +31,7 @@ const BlogDisplay = () => {
                 blogList.map((item, index) => (
                   <div className="blog-item" key={item._id || index} id={item._id}>
                     <img
-                      src={`http://localhost:4000/images/${item.image}`}
+                      src={`${url}/images/${item.image}`}
                       alt={item.title}
                       className="blog-image"
                     />
